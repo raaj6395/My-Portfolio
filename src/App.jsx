@@ -1,9 +1,9 @@
-import React from "react";
+import Navbar from "./sections/navbar";
 
 const App = ()=>{
   return(
     <div className="container mx-auto max-w-7xl">
-      Hello World
+      <Navbar />
       {/* here we are going to add all the components for the portfolio */}
     </div>
   )
