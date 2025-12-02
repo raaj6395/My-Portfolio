@@ -1,9 +1,5 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-
-const closeIcon = "/assets/close.svg";
-const menuIcon = "/assets/menu.svg";
-
 function Navigation() {
   return (
     <ul className="nav-ul">
@@ -33,7 +29,7 @@ function Navigation() {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-black/30">
+    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-black/40">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
           <a
@@ -47,7 +43,7 @@ const Navbar = () => {
             className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden"
           >
             <img
-              src={isOpen ? closeIcon : menuIcon}
+              src={isOpen ? "assets/close.svg" : "assets/menu.svg"}
               className="w-6 h-6"
               alt="toggle"
             />
